@@ -118,7 +118,7 @@ export default function Navbar() {
             ))}
 
             <div className="pt-3 space-y-2">
-             <motion.a
+            <motion.a
   href="/privacy"
   whileHover={{ scale: 1.05 }}
   whileTap={{ scale: 0.95 }}
