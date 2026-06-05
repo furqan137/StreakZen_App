@@ -9,13 +9,14 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: 'Features', href: '#features' },
-    { label: 'Challenges', href: '#challenges' },
-    { label: 'AI Coach', href: '#ai-coach' },
-    { label: 'Pricing', href: '#pricing' },
-    { label: 'Testimonials', href: '#testimonials' },
-    { label: 'FAQ', href: '#faq' },
-  ];
+  { label: 'Features', href: '#features' },
+  { label: 'Challenges', href: '#challenges' },
+  { label: 'AI Coach', href: '#ai-coach' },
+  { label: 'Pricing', href: '#pricing' },
+  { label: 'Testimonials', href: '#testimonials' },
+  { label: 'FAQ', href: '#faq' },
+  { label: 'Privacy', href: '/privacy' },
+];
 
   return (
     <motion.nav
@@ -117,9 +118,14 @@ export default function Navbar() {
             ))}
 
             <div className="pt-3 space-y-2">
-              <button className="w-full px-4 py-2 text-sm border border-purple-500/50 text-purple-300 rounded-lg">
-                Sign In
-              </button>
+             <motion.a
+  href="/privacy"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="px-4 py-2 text-sm border border-purple-500/50 text-purple-300 rounded-lg hover:border-purple-400 hover:bg-purple-500/10 transition-all"
+>
+  Privacy Policy
+</motion.a>
 
               <a
                 href="https://github.com/furqan137/StreakZen/releases/download/v1.0.0/streakzen.apk"
