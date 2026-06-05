@@ -68,14 +68,14 @@ export default function Navbar() {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center gap-3">
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-4 py-2 text-sm border border-purple-500/50 text-purple-300 rounded-lg hover:border-purple-400 hover:bg-purple-500/10 transition-all"
-            >
-              Sign In
-            </motion.button>
-
+           <motion.a
+  href="/privacy"
+  whileHover={{ scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="px-4 py-2 text-sm border border-purple-500/50 text-purple-300 rounded-lg hover:border-purple-400 hover:bg-purple-500/10 transition-all"
+>
+  Privacy Policy
+</motion.a>
             <motion.a
               href="https://github.com/furqan137/StreakZen/releases/download/v1.0.0/streakzen.apk"
               target="_blank"
